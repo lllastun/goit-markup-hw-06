@@ -139,6 +139,7 @@ body {
 .contacts {
     font-style: normal;
     color: var(--main-color);
+    transition: color var(--timing) var(--func-timing);
 }
 
 .header-wrap {
@@ -472,7 +473,6 @@ address {
 
 .subsribe-wrap {
     margin-left: 80px;
-    width: 453px;
 }
 
 .subscribe-form {
@@ -488,7 +488,7 @@ address {
     padding: 8px 16px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border: 1px solid #ffffff;
+    border: 1px solid var(--background-color);
     border-radius: 4px;
     font-size: 12px;
     color: var(--background-color);
@@ -509,6 +509,7 @@ address {
     background-color: var(--accent-color);
     letter-spacing: 0.04em;
     transition: background-color var(--timing) var(--func-timing);
+    align-items: center;
 }
 
 .subscribe-btn:hover,
@@ -518,7 +519,7 @@ address {
 
 .subscribe-icon {
     width: 24px;
-    height: 20px;
+    height: 24px;
     fill: var(--background-color);
 }
 
@@ -651,10 +652,6 @@ address {
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--timing) var(--func-timing);
-
-    font-size: 12px;
-    letter-spacing: 0.01em;
-    line-height: 1.17;
 }
 
 .is-hidden {
@@ -702,13 +699,19 @@ address {
     border: 1px solid var(--accent-color);
 }
 
+.input-wrap {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    color: var(--inactive-icon);
+}
+
 .text-modal {
     font-weight: 500;
     text-align: center;
     color: var(--second-color);
     margin-bottom: 16px;
-    font-size: 16px;
-    color: var(--second-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -745,6 +748,7 @@ address {
 }
 
 .comment {
+    display: block;
     height: 120px;
     width: 100%;
     resize: none;
@@ -752,6 +756,9 @@ address {
     padding: 8px 16px;
     outline: none;
     color: var(--second-color);
+    caret-color: var(--second-color);
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     transition: color var(--timing) var(--func-timing),
         border var(--timing) var(--func-timing);
 }
@@ -768,7 +775,16 @@ address {
     display: flex;
     margin-top: 16px;
     align-items: center;
-    gap: 5px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.17;
+    color: var(--inactive-icon);
+    margin-left: 11px;
+}
+
+.accept-wrap:nth-child(1) {
+    margin-right: 100px;
+    padding-right: 100px;
 }
 
 .accept-icon-wrap {
@@ -790,11 +806,9 @@ address {
     transition: opacity var(--timing) var(--func-timing);
 }
 
-.checkbox-policy {
-}
-
 .privacy-policy-link {
     color: var(--accent-color);
+    margin-left: 4px;
 }
 
 .checkbox-policy:checked + .accept-icon-wrap {
