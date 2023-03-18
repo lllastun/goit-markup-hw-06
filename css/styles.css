@@ -376,8 +376,7 @@ address {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    transition: color var(--timing) var(--func-timing),
-        border var(--timing) var(--func-timing);
+    transition: border var(--timing) var(--func-timing);
 }
 
 .rectangle:hover,
@@ -394,6 +393,7 @@ address {
     width: 104px;
     height: 56px;
     fill: var(--inactive-icon);
+    transition: fill var(--timing) var(--func-timing);
 }
 
 .rectangle:hover .customers-icon,
