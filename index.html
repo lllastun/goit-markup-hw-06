@@ -23,15 +23,16 @@
 
         <a class="link logo" href="./index.html"><span class="logo-web">WEB</span>STUDIO</a>
         <ul class="site-nav list">
-          <li class="site-nav-item"><a class="link current" href="#">Studio</a></li>
-          <li class="site-nav-item"><a class="link" href="./portfolio.html">Portfolio</a></li>
-          <li class="site-nav-item"><a class="link" href="#">Contacts</a></li>
+          <li class="site-nav-item"><a class="nav link current" href="#">Studio</a></li>
+          <li class="site-nav-item"><a class="nav link" href="./portfolio.html">Portfolio</a></li>
+          <li class="site-nav-item"><a class="nav link" href="#">Contacts</a></li>
         </ul>
       </nav>
       <address>
         <ul class="contacts-list list">
-          <li class="contacts-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="contacts-item"><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li class="contacts-item"><a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contacts-item"><a class="contacts link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
     </div>
@@ -305,34 +306,47 @@
         <p class="social-media">Social media</p>
         <ul class="icon-list list">
           <li class="icon-item">
-            <a class="icon-ellipse" href="#">
+            <a class="footer-icon-ellipse" href="#">
               <svg>
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="icon-item">
-            <a class="icon-ellipse" href="#">
+            <a class="footer-icon-ellipse" href="#">
               <svg>
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="icon-item">
-            <a class="icon-ellipse" href="#">
+            <a class="footer-icon-ellipse" href="#">
               <svg>
                 <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="icon-item">
-            <a class="icon-ellipse" href="#">
+            <a class="footer-icon-ellipse" href="#">
               <svg>
                 <use href="./images/icons.svg#linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
+      </div>
+      <div class="subsribe-wrap">
+        <p class="subscribe-title">Subscribe</p>
+        <form class="subscribe-form">
+          <label>
+            <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+          </label>
+          <button class="subscribe-btn btn" type="submit">Subscribe
+            <svg class="subscribe-icon">
+              <use href="./images/icons.svg#subscribe"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
@@ -344,6 +358,56 @@
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
+      <h2 class="text-modal">Leave your contacts and we will call you back</h2>
+      <form>
+        <label>
+          Name
+          <span class="svg-wrap">
+            <input class="modal-input" type="text" name="username" autocomplete="name" required>
+            <svg class="modal-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#name"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label>
+          Phone
+          <span class="svg-wrap">
+            <input class="modal-input" type="tel" name="phone" autocomplete="tel" required>
+            <svg class="modal-icon" width="18px" height="24px">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label>
+          Email
+          <span class="svg-wrap">
+            <input class="modal-input" type="email" name="email" autocomplete="email" required>
+            <svg class="modal-icon" width="18px" height="24px">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label>
+          Comment
+          <textarea class="comment" name="comment" placeholder="Text input"></textarea>
+        </label>
+
+        <label class="accept-wrap">
+          <input class="checkbox-policy visually-hidden" type="checkbox" name="checkbox" required>
+          <span class="accept-icon-wrap">
+            <svg class="accept-icon" width="10px" height="8px">
+              <use href="./images/icons.svg#check"></use>
+            </svg>
+          </span>
+          I accept the terms and conditions of the
+          <a class="privacy-policy-link" href="#">Privacy Policy</a>
+        </label>
+        <button class="send-btn btn" type="submit">Send</button>
+      </form>
+
     </div>
   </div>
 
